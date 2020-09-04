@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  greeting = 'Hello, ';
-  specificName = '';
-  initialValue = 'World';
-
-  keyupHandler(event: KeyboardEvent, name: string): void {
-    console.log(event);
-    if (event.key === 'Enter') {
-      this.specificName = name;
-    }
-  }
-  // some changes
 }
