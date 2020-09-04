@@ -1,4 +1,4 @@
-git import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CityWeatherComponent} from './city-weather/city-weather.component';
 import { CityTilesContainerComponent } from './city-tiles-container/city-tiles-container.component';
@@ -10,7 +10,7 @@ const routes: Routes = [
     component: CityTilesContainerComponent
   },
   {
-    path: 'city',
+    path: 'city/:city',
     component: CityWeatherComponent
   },
   {
