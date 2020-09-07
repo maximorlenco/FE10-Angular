@@ -8,7 +8,6 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class CityWeatherComponent implements OnInit {
 
-  @Input()
   city: string;
 
   constructor(private route: ActivatedRoute) {
@@ -18,6 +17,7 @@ export class CityWeatherComponent implements OnInit {
     this.route.params.subscribe((params) => {
       this.city = params.city;
     });
+    setTimeout(() => this.city = 'Moscow', 3000);
   }
 
 }
